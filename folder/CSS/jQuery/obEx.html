@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating an example of an Object</h1>
+    <h2>Object Methods</h2>
+    <p>A Method is a function definitionstored as a property value</p>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+           firstName :"Joe",
+           lastName :"Doe",
+           id:7834,
+           myCars:{
+            car1: "Fiat",
+            car2: "Ford",
+            car3: "Volvo",
+           },
+
+           fullName: function() {
+            return this.firstName + "" + this.lastName;
+           }
+
+        }
+
+        document.getElementById("demo").innerHTML=person.fullName();
+        document.getElementById("demo").innerHTML=person.myCars.car2;
+    </script>
+</body>
+</html>

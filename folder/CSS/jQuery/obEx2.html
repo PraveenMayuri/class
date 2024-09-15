@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is an example for Object</h1>
+    <p id="demo"></p>
+    <script>
+        function Person(first,last,age,eyecolor){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyecolor = eye;
+        }
+
+        
+        const myFather= new Person("Jayaram","Janardhan","70","brown");
+        const myMother= new Person("Sandhya","Jayaram","60","black");
+
+
+        document.getElementById("demo").innerHTML= 
+        "My Father's name is " + myFather.age + "My mother's Name is" + myMother.age + ".";
+    </script>
+</body>
+</html>
